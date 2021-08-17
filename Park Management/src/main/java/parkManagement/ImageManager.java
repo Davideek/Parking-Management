@@ -12,7 +12,6 @@ public class ImageManager {
 	private static float confidence = 80f;
 	private AmazonRekognition rekognitionClient;
 	private Image image;
-	private ProtectionManager protectionManager;
 	private LabelManager labelManager;
 	private TextManager textManager;
 	
