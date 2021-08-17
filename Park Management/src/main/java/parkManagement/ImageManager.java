@@ -28,7 +28,7 @@ public class ImageManager {
 	}
 	
 	/**Creates a TextManager for the image **/
-	public void createDetectedTexts(){
+	public void createTextManager(){
 		DetectTextRequest request = new DetectTextRequest().withImage(image);
 		DetectTextResult result = rekognitionClient.detectText(request);
 		textManager = new TextManager(result.getTextDetections());		
